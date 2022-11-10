@@ -6,3 +6,45 @@
 html {
   font-size: 20px;
 }
+
+@layer components {
+  .regular-text {
+    text-transform: uppercase;
+    font-weight: 800;
+  }
+
+  .hero-heading {
+    font-weight: 600;
+    font-size: 10vw;
+    line-height: 1;
+  }
+
+  .center-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .project-title-right {
+    position: absolute;
+    bottom: 20%;
+    right: -25%;
+    font-size: 5vw;
+    font-weight: 600;
+  }
+
+  .project-title-left {
+    position: absolute;
+    bottom: 20%;
+    left: -25%;
+    font-size: 5vw;
+    font-weight: 600;
+  }
+
+  .custom-cursor {
+    height: 5px;
+    width: 5px;
+    position: fixed;
+    background-color: #e32636;
+  }
+}
