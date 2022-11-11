@@ -23,7 +23,7 @@ const Navbar = () => {
   return (
     <div className="flex justify-between py-3">
       {links.map((l) => (
-        <NavLink href={l.href} name={l.name} />
+        <NavLink key={l.href} href={l.href} name={l.name} />
       ))}
     </div>
   );
