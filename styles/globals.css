@@ -5,6 +5,11 @@
 
 html {
   font-size: 20px;
+  overflow: hidden;
+}
+
+* {
+  cursor: none;
 }
 
 @layer components {
@@ -42,9 +47,27 @@ html {
   }
 
   .custom-cursor {
-    height: 5px;
-    width: 5px;
+    height: 1vw;
+    width: 1vw;
     position: fixed;
+    z-index: 1000;
     background-color: #e32636;
+    border-radius: 50%;
+    pointer-events: none;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
+  }
+
+  .cursor-follower {
+    height: 4vw;
+    width: 4vw;
+    position: fixed;
+    /* z-index: 1000; */
+    /* background-color: #e32636; */
+    border: 2px solid #e32636;
+    border-radius: 50%;
+    pointer-events: none;
+    overflow: hidden;
+    transform: translate3d(0, 0, 0);
   }
 }
